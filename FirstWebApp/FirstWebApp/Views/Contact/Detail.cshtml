@@ -1,0 +1,27 @@
+﻿@*<h1>Student name: @ViewBag.Name @ViewData["Surname"] @TempData["Age"]</h1>*@
+@using FirstWebApp.Models
+
+
+@*@model List<Student>
+
+<ul> 
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>*@
+
+@*@{ 
+    List<Student> students = Model;
+}
+
+<ul>
+    @foreach (var item in students)
+    {
+        <li>@item</li>
+    }
+</ul>*@
+
+@model Student
+
+<h1>Student detail: @Model</h1>
